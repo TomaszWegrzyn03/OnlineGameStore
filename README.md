@@ -41,8 +41,8 @@ endpoint with admin creditentials json body:
   "password":"admin"
 }</code>
 
-The returning value is JWT Token lasting 1 hour. The token must be provided in header named Authorization and before token must be placed word "Bearer ". <br>
-This is easiest achieved in Postman, clicking on Authorization tab, choosing Bearer Token and pasting returned token from login.
+The returned value is JWT Token lasting 1 hour. The token must be provided in header named Authorization and before the token must be placed word "Bearer ". <br>
+This is easiest achieved in Postman, clicking on Authorization tab, choosing Bearer Token and pasting returned token from login. <br>
 <img src="https://user-images.githubusercontent.com/101212671/230711385-bb50aed1-e134-42d7-bbff-0024cbb1a0fc.png" width="70%">
 
 
@@ -51,7 +51,7 @@ Secured endpoint allowing admins to add new games to the store.
 
 <code> POST </code> http://localhost:8080/api/games/post
 
-example body
+Example body : 
 
 <code>{
    "id": 0,
@@ -63,7 +63,7 @@ example body
    "dollarPrice": 6.99
 }</code>
 
-Response: <br>
+Example response : <br>
 <img src="https://user-images.githubusercontent.com/101212671/230711544-d44a2bdc-9c63-44af-aade-d8d96a034363.png">
 
 
@@ -74,12 +74,13 @@ Secured enpoint for admins to delete games from store by their id.
 
 </ode> DELETE </code> http://localhost:8080/api/games/delete/2
 
+<br>
 
 <h3>PUT Update game providing its id and body.</h3>
 
 <code> PUT </code> http://localhost:8080/api/games/update/1
 
-example body 
+Example body:
 
 <code>{
     "id": 0,
@@ -96,8 +97,8 @@ For all the calls i created public space on Postman under the link: <br>
 https://elements.getpostman.com/redirect?entityId=20001291-f72cda6a-9c2b-431e-a108-4e754685bfaa&entityType=collection
 
 # Tests
-I created tests for service and controller. They might be far from perfect, because i still learn testing, but I did my best for knowledge I have.
-![tests1](https://user-images.githubusercontent.com/101212671/230711611-8d63622d-f941-4b4d-9f76-5fbe298dc0bd.jpg)
+I created tests for service and controller. They might be far from perfect, because i still learn testing, but I did my best for knowledge I have.<br>
+![tests1](https://user-images.githubusercontent.com/101212671/230711611-8d63622d-f941-4b4d-9f76-5fbe298dc0bd.jpg)<br>
 
 ![test2](https://user-images.githubusercontent.com/101212671/230711614-80ec2731-d5a0-414a-9427-74207108e8a5.jpg)
 
