@@ -72,7 +72,7 @@ Example response : <br>
 <h3>DELETE Game by it's id.</h3>
 Secured enpoint for admins to delete games from store by their id.
 
-</ode> DELETE </code> http://localhost:8080/api/games/delete/2
+</code> DELETE </code> http://localhost:8080/api/games/delete/2
 
 <br>
 
